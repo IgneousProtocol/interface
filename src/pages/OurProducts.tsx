@@ -26,10 +26,6 @@ const products: IgneousMenuProducts[] = [
     }
 ]
 
-const comproveProducts = (products: IgneousMenuProducts[]) => {
-    return products
-}
-
 const Card: React.FC<{ product: IgneousMenuProducts }> = (props) => {
     const { product } = props
     return (
