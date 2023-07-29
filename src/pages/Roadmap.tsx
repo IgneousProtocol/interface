@@ -1,10 +1,10 @@
-interface RoadmapItem {
+interface Item {
     title: string,
     content: string,
 }
 
 
-const roadmapItems: RoadmapItem[] = [
+const roadmapItems: Item[] = [
     {
         title: "Integration of cross-chain protocols",
         content: "Igneous Protocol seeks to be a multi-chain compatible platform, integrating cross-chain protocols such as Polkadot, Cosmos and Avalanche to leverage performance opportunities across different ecosystems."
@@ -24,7 +24,7 @@ const roadmapItems: RoadmapItem[] = [
 ];
 
 
-const RoadmapItem: React.FC<RoadmapItem> = ({title, content}) => {
+const RoadmapItem: React.FC<Item> = ({title, content}) => {
     return (
         <div className="flex flex-col mb-8">
             <div className="bg-white flex justify-center items-center text-center rounded-full p-2 md:py-4 md:px-6">
